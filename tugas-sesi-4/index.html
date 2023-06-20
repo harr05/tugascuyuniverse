@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TUGAS SESI 4</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"  rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <body>
+    <div class="flex flex-row-reverse relative">
+    <section class="splide" aria-label="Basic Structure Example">
+      <div class="splide__track h=h-screen">
+        <ul class="splide__list h-full">
+           <!-- TAMU -->
+          <li class=" tamu splide__slide relative">
+            <section class="lamputm flex justify-end flex-row relative">
+              <div class=" relative justify-center m-16"><h1 class="text-4xl m-2">ALL</h1>
+                <label for="all" class="relative inline-flex items-center cursor-pointer">
+              <input type="checkbox" id="all" class="sr-only peer" onchange="toggleLampsTm()">
+              <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"> 
+              </div>
+              </label>
+                </div>
+              <div class="flex flex-col items-center">
+              <img src="assets/images/off.png" alt="" id="lamputm1" srcset="">
+                <label for="default-toggle1tm" class="inline-flex relative items-center cursor-pointer">
+                  <input type="checkbox" id="default-toggle1tm" class="sr-only peer" onchange="saklarTm()" />
+                  <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+                  ></div>
+                </label>
+              </div>
+              <div class="flex flex-col items-center">
+                  <img src="assets/images/off.png" alt="" id="lamputm2" srcset="">
+                <label for="default-toggle2tm" class="inline-flex relative items-center cursor-pointer">
+                  <input type="checkbox" id="default-toggle2tm" class="sr-only peer" onchange="saklarTm()" />
+                  <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+                  ></div>
+                </label>
+              </div>
+              <div class="flex flex-col items-center">
+                <img src="assets/images/off.png" alt="" id="lamputm3" class="lamputm" srcset="">
+                <label for="default-toggle3tm" class="inline-flex relative items-center cursor-pointer">
+                  <input type="checkbox" id="default-toggle3tm" class="sr-only peer" onchange="saklarTm()" />
+                  <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+                  ></div>
+                </label>
+              </div>
+              <div class="flex flex-col items-center">
+                <img src="assets/images/off.png" alt="" id="lamputm4" class="lamputm" srcset="">
+                <label for="default-toggle4tm" class="inline-flex relative items-center cursor-pointer">
+                  <input type="checkbox" id="default-toggle4tm" class="sr-only peer" onchange="saklarTm()" />
+                  <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+                  ></div>
+                </label>
+              </div>
+            </section>
+            </li>
+            <!-- ruang tamu end -->
+
+            <!-- ruang keluarga -->
+          <li class=" keluarga splide__slide h-screen relative">
+            <section class="lampukr flex flex-row relative justify-center ">
+              <div class=" relative justify-center m-16"><h1 class="text-4xl m-2">ALL</h1>
+                <label for="togglekr" class="inline-flex relative items-center cursor-pointer">
+                  <input type="checkbox" id="togglekr" class="sr-only peer" onchange="toggleLampsKr()" />
+                  <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+                  ></div>
+                </label>
+              </div>
+              <div class="flex flex-col items-center w-48">
+                  <img src="assets/images/off.png" alt="" id="lampukr1" srcset="">
+                <label for="default-toggle1kr" class="inline-flex relative items-center cursor-pointer">
+                  <input type="checkbox" id="default-toggle1kr" class="sr-only peer" onchange="saklarkr()" />
+                  <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+                  ></div>
+                </label>
+              </div>
+              <div class="flex flex-col items-center w-48">
+                <img src="assets/images/off.png" alt="" id="lampukr2" class="lamputm" srcset="">
+                <label for="default-toggle2kr" class="inline-flex relative items-center cursor-pointer">
+                  <input type="checkbox" id="default-toggle2kr" class="sr-only peer" onchange="saklarkr()" />
+                  <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+                  ></div>
+                </label>
+              </div>
+              <div class="flex flex-col items-center w-48">
+                <img src="assets/images/off.png" alt="" id="lampukr3" class="lamputm" srcset="">
+                <label for="default-toggle3kr" class="inline-flex relative items-center cursor-pointer">
+                  <input type="checkbox" id="default-toggle3kr" class="sr-only peer" onchange="saklarkr()" />
+                  <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+                  ></div>
+                </label>
+              </div>
+            </section>
+            </li>
+            <!-- end ruang keluarga end -->
+
+            <!-- ruang makan -->
+          <li class=" makan splide__slide h-screen relative">
+            <section class="lampukr flex flex-row relative justify-center ">
+              <div class=" relative justify-center m-16"><h1 class="text-4xl m-2">ALL</h1>
+                <label for="togglekr" class="inline-flex relative items-center cursor-pointer">
+                  <input type="checkbox" id="togglekr" class="sr-only peer" onchange="toggleLampsKr()" />
+                  <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+                  ></div>
+                </label>
+              </div>
+              <div class="flex flex-col items-center w-72">
+                  <img src="assets/images/off.png" alt="" id="lampukr1" srcset="">
+                <label for="default-toggle1kr" class="inline-flex relative items-center cursor-pointer">
+                  <input type="checkbox" id="default-toggle1kr" class="sr-only peer" onchange="saklarkr()" />
+                  <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+                  ></div>
+                </label>
+              </div>
+          </section>
+          </li>
+          <!--  end ruang makan  -->
+
+          <!-- ruang tidur -->
+          <li class=" tidur splide__slide">
+
+          </li>
+          <!-- end ruang tidur -->
+
+          
+        </ul>
+      </div>
+    </section>
+    </div>
+    
+  </body>
+    <script src="saklar.js" type="application/Javascript"></script>
+  <script>
+    var splide = new Splide( '.splide' );
+    splide.mount();
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+</html>

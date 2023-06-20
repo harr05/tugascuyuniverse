@@ -1,0 +1,23 @@
+.tamu {
+    background-image: url(assets/images/RTAMU.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.keluarga {
+    background-image: url(assets/images/RKELUARGA.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.makan {
+    background-image: url(assets/images/RMAKAN.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tidur {
+    background-image: url(assets/images/RTIDUR.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
